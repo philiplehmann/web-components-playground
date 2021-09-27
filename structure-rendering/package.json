@@ -1,0 +1,15 @@
+{
+  "name": "webcomponents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^13.0.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "yarn run typescript & yarn run http-server",
+    "typescript": "tsc --watch",
+    "http-server": "http-server"
+  }
+}

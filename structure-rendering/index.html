@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Components Playground</title>
+  <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+  <input type="text" name="name" autocomplete="off" />
+  <pl-component id="name"></pl-component>
+  <script type="application/javascript">
+    const input = document.querySelector('input[name=name]')
+    const component = document.querySelector('#name')
+    input.addEventListener('keyup', (event) => {
+      console.log(event)
+      component.name = event.target.value
+    })
+  </script>
+</body>
+
+</html>
